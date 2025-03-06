@@ -9,7 +9,7 @@ const Products = () => {
       <SinglePerfume
         key={perfume._id}
         fragrance={perfume.fragrance}
-        img={logo}
+        img={perfume.img}
         name={perfume.name}
         price={perfume.price}
         scent={perfume.scent}
