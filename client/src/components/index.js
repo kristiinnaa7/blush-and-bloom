@@ -6,6 +6,7 @@ import Products from "./Products/Products";
 import Login from "./Login/Login";
 import Logout from "./Logout/Logout";
 import Profile from "./Profile/Profile";
+import SinglePerfume from "./SinglePerfume/SinglePerfume";
 
 export {
     About,
@@ -15,5 +16,6 @@ export {
     Products,
     Login,
     Logout,
-    Profile
+    Profile,
+    SinglePerfume
 }
