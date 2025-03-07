@@ -5,29 +5,29 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div>
-      <ul>
-        <NavLink to={Path.About} className="">
+    <div className="navbar">
+      <ul className="nav-options">
+        <NavLink to={Path.About} className="nav-link">
           <li>About us</li>
         </NavLink>
-        <NavLink to={Path.Products} className="">
+        <NavLink to={Path.Products} className="nav-link">
           <li>Products</li>
         </NavLink>
-        <NavLink to={Path.AddProduct} className="">
+        <NavLink to={Path.AddProduct} className="nav-link">
           <li>Add product</li>
         </NavLink>
       </ul>
       <NavLink to="/">
         <img className='logo' src={logo} alt="logo" />
       </NavLink>
-      <ul>
-        <NavLink to={Path.Profile} className="">
+      <ul className="profile-options">
+        <NavLink to={Path.Profile} className="nav-link">
           <li>Profile</li>
         </NavLink>
-        <NavLink to={Path.Login} className="">
+        <NavLink to={Path.Login} className="nav-link">
           <li>Login</li>
         </NavLink>
-        <NavLink to={Path.Logout} className="">
+        <NavLink to={Path.Logout} className="nav-link">
           <li>Logout</li>
         </NavLink>
       </ul>

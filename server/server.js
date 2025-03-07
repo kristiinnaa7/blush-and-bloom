@@ -1354,7 +1354,7 @@
     			scent: "floral",
                 size: "50ml",
                 price: "$110",
-                img: "assets/versace.jpg",
+                img: "https://www.pinterest.com/pin/725712927490954070/",
     			_createdOn: 1613551279012
     		},
     		"8f414b4f-ab39-4d36-bedb-2ad69da9c830": {

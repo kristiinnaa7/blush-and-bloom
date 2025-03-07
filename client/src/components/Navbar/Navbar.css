@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    border: 1px solid #FFFCF5;
+    background: #FFFCF5;
+    color: rgb(158, 120, 103);
+    font-weight: 800;
+    
+}
+
+.nav-options  {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    font-size: 25px;
+}
+
+.profile-options  {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    font-size: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+  }
+  
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 140px;
+}
+    
