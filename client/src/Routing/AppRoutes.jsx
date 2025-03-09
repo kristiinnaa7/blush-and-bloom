@@ -7,6 +7,7 @@ import {
   Navbar,
   Products,
   Profile,
+  Page404,
 } from "../components";
 import { Route, Routes } from "react-router-dom";
 import Path from "../path";
@@ -41,6 +42,8 @@ const routes = [
     path: Path.Profile,
     element: <Profile />,
   },
+  {path: Path.Error,
+     element: <Page404 />}
 ];
 
 const generateRoutes = () => {

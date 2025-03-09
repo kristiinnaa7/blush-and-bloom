@@ -7,6 +7,7 @@ import Login from "./Login/Login";
 import Logout from "./Logout/Logout";
 import Profile from "./Profile/Profile";
 import SinglePerfume from "./SinglePerfume/SinglePerfume";
+import Page404 from "./Page404/Page404";
 
 export {
     About,
@@ -17,5 +18,6 @@ export {
     Login,
     Logout,
     Profile,
-    SinglePerfume
+    SinglePerfume,
+    Page404
 }
