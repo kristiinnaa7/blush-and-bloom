@@ -8,10 +8,14 @@ import {
   Products,
   Profile,
   Page404,
+  Footer,
+  Register,
+  LoginGuard,
+  AuthGuard,
 } from "../components";
 import { Route, Routes } from "react-router-dom";
 import Path from "../path";
-import { Fragment } from "react";
+import { AuthContextProvider } from "../components/context/AuthContext";
 
 const routes = [
   {
@@ -35,15 +39,14 @@ const routes = [
     element: <Login />,
   },
   {
-    path: Path.Logout,
-    element: <Logout />,
-  },
-  {
     path: Path.Profile,
     element: <Profile />,
   },
-  {path: Path.Error,
-     element: <Page404 />}
+  { path: Path.Error, element: <Page404 /> },
+  {
+    path: Path.Register,
+    element: <Register />,
+  },
 ];
 
 const generateRoutes = () => {
@@ -54,10 +57,17 @@ const generateRoutes = () => {
 
 const AppRoutes = () => {
   return (
-    <Fragment>
+    <AuthContextProvider>
       <Navbar />
-      <Routes>{generateRoutes()}</Routes>
-    </Fragment>
+      <Routes>
+        {generateRoutes()}
+        <Route element={<AuthGuard />}>
+          <Route path={Path.Logout} element={<Logout />} />
+          <Route path={Path.Profile} element={<Profile />} />
+        </Route>
+      </Routes>
+      <Footer />
+    </AuthContextProvider>
   );
 };
 

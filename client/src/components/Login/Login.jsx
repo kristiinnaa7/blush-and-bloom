@@ -1,61 +1,58 @@
 import { useForm } from "../../hooks/useForm";
 import { useLogin } from "../../hooks/useAuth";
-import { Link, useNavigate } from 'react-router-dom'
-import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Fragment, useState } from "react";
 
-import "./Login.css"
+import "./Login.css";
 
 import log from "../../assets/log.jpg";
 import logPhoto from "../../assets/bow.jpg"; // Ensure this image exists
 
-const initialValues = { email: "", password: "" }
+const initialValues = { email: "", password: "" };
 
 const Login = () => {
-
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
   const login = useLogin();
   const navigate = useNavigate();
 
   const loginHandler = async ({ email, password }) => {
     try {
       if (!email.trim()) {
-        setError('Email field is required.');
+        setError("Email field is required.");
         return;
       }
 
-      if (!email.includes('@') || !email.includes('.')) {
+      if (!email.includes("@") || !email.includes(".")) {
         setError('Invalid email format. Email must contain "@" and "."');
         return;
       }
 
       if (!password.trim()) {
-        setError('Password field is required.');
+        setError("Password field is required.");
         return;
       }
 
       await login(email, password);
-      navigate('/');
-
+      navigate("/");
     } catch (err) {
       setError(err.message);
     }
   };
 
-  const {
-    values,
-    changeHandler,
-    submitHandler
-  } = useForm(initialValues, loginHandler);
+  const { values, changeHandler, submitHandler } = useForm(
+    initialValues,
+    loginHandler
+  );
 
   return (
-    <div className="wrapper-big">
+    <Fragment>
       <div className="border-img">
         <img src={log} alt="Background" />
       </div>
       <section className="login">
         <div className="form">
           <h2>Login</h2>
-          
+
           <div className="login-img">
             <img src={logPhoto} alt="Login Image" />
           </div>
@@ -85,7 +82,9 @@ const Login = () => {
               </p>
             )}
 
-            <button className="button-login" type="submit">Login</button>
+            <button className="button-login" type="submit">
+              Login
+            </button>
 
             <p className="message">
               Not registered? <Link to={"/register"}>Create an account</Link>
@@ -93,7 +92,7 @@ const Login = () => {
           </form>
         </div>
       </section>
-    </div>
+    </Fragment>
   );
 };
 

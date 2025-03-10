@@ -8,16 +8,24 @@ import Logout from "./Logout/Logout";
 import Profile from "./Profile/Profile";
 import SinglePerfume from "./SinglePerfume/SinglePerfume";
 import Page404 from "./Page404/Page404";
+import Footer from "./Footer/Footer";
+import Register from "./Register/Register";
+import AuthGuard from "./Guards/AuthGuard";
+import LoginGuard from "./Guards/LoginGuard";
 
 export {
-    About,
-    Home,
-    Navbar,
-    AddProduct,
-    Products,
-    Login,
-    Logout,
-    Profile,
-    SinglePerfume,
-    Page404
-}
+  About,
+  Home,
+  Navbar,
+  AddProduct,
+  Products,
+  Login,
+  Logout,
+  Profile,
+  SinglePerfume,
+  Page404,
+  Footer,
+  Register,
+  AuthGuard,
+  LoginGuard,
+};

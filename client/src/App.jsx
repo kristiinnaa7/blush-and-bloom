@@ -1,10 +1,12 @@
-import AppRoutes from "./Routing/AppRoutes"
+import AppRoutes from "./Routing/AppRoutes";
+import "./index.css";
 
 const App = () => {
-
   return (
-    <AppRoutes />
-  )
-}
+    <div className="global-wrapper">
+      <AppRoutes />
+    </div>
+  );
+};
 
-export default App
+export default App;

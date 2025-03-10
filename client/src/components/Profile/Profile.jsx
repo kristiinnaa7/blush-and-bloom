@@ -1,7 +1,8 @@
-const Profile = () => {
-  return (
-    <div>Profile</div>
-  )
-}
+import { useAuthContext } from "../context/AuthContext";
 
-export default Profile
+const Profile = () => {
+  const { email } = useAuthContext();
+  return <div>{email}</div>;
+};
+
+export default Profile;
