@@ -1,12 +1,12 @@
 import "./About.css";
 
-import bird from "../../assets/bird.jpg";
+import bottle from "../../assets/bottle.jpg";
 
 const About = () => {
   return (
     <div>
       <div className="home-page-second">
-        <img src={bird} alt="Blush & Bloom Logo" />
+        <img src={bottle} alt="Blush & Bloom Logo" />
         <div className="home-page-second-text">
           <h4>Welcome to Blush & Bloom – A Fragrance for Every Moment</h4>
           <p>

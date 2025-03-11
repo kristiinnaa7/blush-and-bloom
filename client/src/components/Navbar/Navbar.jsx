@@ -1,6 +1,6 @@
 import Path from "../../path";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo-swan.png";
+import logo from "../../assets/app-logo.png";
 import "./Navbar.css";
 import { useAuthContext } from "../context/AuthContext";
 import { Fragment } from "react";

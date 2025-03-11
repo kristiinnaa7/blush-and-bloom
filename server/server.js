@@ -1473,7 +1473,7 @@
         scent: "floral",
         size: "30ml",
         price: "$250 ",
-        img: "assets/versace.jpg",
+        img: "https://i.pinimg.com/474x/61/cb/e8/61cbe816243020eb548e59dcc3bb73a9.jpg",
         _createdOn: 1613551344360,
       },
       "985d9eab-ad2e-4622-a5c8-116261fb1fd2": {
@@ -1483,7 +1483,7 @@
         scent: "floral",
         size: "30ml",
         price: "$120",
-        img: "assets/versace.jpg",
+        img: "https://i.pinimg.com/474x/1b/83/f7/1b83f771e1096833401c992636b9cb4d.jpg",
         _createdOn: 1613551388703,
       },
     },

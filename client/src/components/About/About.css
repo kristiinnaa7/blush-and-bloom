@@ -1,53 +1,49 @@
-
 .home-page-second {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 50px;
-    gap: 80px;
-    position: relative; 
-    width: 100%;
-    min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 50px;
+  gap: 80px;
+  position: relative;
+  width: 100%;
+  min-height: 500px;
 }
 
 .home-page-second::before {
-    content: ""; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../../assets/about.jpg"); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.3; 
-    z-index: -1; 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/about.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
 }
 
-
 .home-page-second img {
-    width: 500px;
-    height: 600px;
-    display: block;
-    border-radius: 500px;
+  width: 550px;
+  height: 600px;
+  display: block;
+  border-radius: 500px;
+  box-shadow: 0 0 45px 40px rgb(255, 255, 255);
 }
 
 .home-page-second h4 {
-    font-size: 30px;
-    font-weight: bold;
-    color: #ff4081;
-    margin: 10px 0;
-    padding: 10px 0;
-
-;
+  font-size: 30px;
+  font-weight: bold;
+  color: #f386cd;
+  margin: 10px 0;
+  padding: 10px 0;
 }
 
 .home-page-second p {
-    font-size: 20px;
-    color: rgb(82, 90, 89);
-    margin: 20px 0;
-    line-height: 1.5;
-    width: 550px;
+  font-size: 20px;
+  color: rgb(82, 90, 89);
+  margin: 20px 0;
+  line-height: 1.5;
+  width: 550px;
 }
-
