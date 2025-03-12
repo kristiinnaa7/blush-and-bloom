@@ -53,10 +53,10 @@ const AddProduct = () => {
     <div className="wrapper-perfume">
       <section id="create">
         <div className="form-wrap">
-          <h2>
-            Design Your <br /> Custom Perfume,
-            <span className="single-perfume-name design-name">{name}!</span>
-          </h2>
+          <span className="single-perfume-name design-name">
+            Design Your Custom Perfume
+          </span>
+
           <form onSubmit={submitHandler} className="perfume-form">
             <input
               type="text"
