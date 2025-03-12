@@ -1,7 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useRegister } from "../../hooks/useAuth";
 import { useForm } from "../../hooks/useForm";
-import { useState } from "react";
+import { Fragment, useState } from "react";
+
+import log from "../../assets/log.jpg";
+import logPhoto from "../../assets/bow.jpg";
 
 const intionalValues = {
   email: "",
@@ -46,11 +49,17 @@ const Register = () => {
   );
 
   return (
-    <div className="wrapper-big">
+    <Fragment>
+      <div className="border-img">
+        <img src={log} alt="Background" />
+      </div>
       <section id="register">
-        <div className="form">
+        <div className="form-register">
           <h2>Register</h2>
-          <form onSubmit={submitHandler} className="login-form">
+          <div className="login-img">
+            <img src={logPhoto} alt="Login Image" />
+          </div>
+          <form onSubmit={submitHandler} className="register-form">
             <input
               type="text"
               name="email"
@@ -87,7 +96,7 @@ const Register = () => {
           </form>
         </div>
       </section>
-    </div>
+    </Fragment>
   );
 };
 

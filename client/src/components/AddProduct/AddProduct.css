@@ -1,33 +1,84 @@
-.single-perfume-name {
-  padding: 0;
-  padding-left: 5px;
-  text-transform: capitalize;
-  font-weight: bold;
-}
-
-.design-name {
-  color: rgba(255, 51, 129, 1);
-  font-size: 30px;
-}
-
-.wrapper-big-create {
-  position: relative;
-  min-height: 100vh;
+.wrapper-perfume {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-image: url('../../assets/cover565.jpg');  */
-  background-size: contain;
-  background-position: contain;
-  background-repeat: no-repeat;
+  min-height: 900px;
 }
 
-.form h2 {
-  color: rgba(77, 112, 137, 1);
+.perfume-form {
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
 }
 
-.buttons {
+.perfume-form h2 {
+  color: #4d7089;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.single-perfume-name {
+  padding-left: 5px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 32px;
+  display: block;
+  color: rgba(255, 51, 129, 1);
+}
+
+.perfume-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.perfume-form input:focus {
+  border-color: #ff3381;
+  box-shadow: 0px 0px 8px rgba(255, 51, 129, 0.4);
+}
+
+.perfumeButtons {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.perfumeButton {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  background: #fa5795;
+  color: white;
+}
+
+.perfumeButton:hover {
+  background: #e43c79;
+  transform: scale(1.05);
+}
+
+.perfumeButton:last-child {
+  background: #4d7089;
+}
+
+.perfumeButton:last-child:hover {
+  background: #3a5669;
+}
+
+.field span {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
 }

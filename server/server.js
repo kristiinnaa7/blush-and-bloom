@@ -1463,7 +1463,7 @@
         scent: "floral",
         size: "50ml",
         price: "$110",
-        img: "https://i.pinimg.com/474x/c7/2a/2d/c72a2d1dac5d72a3fe75bcdadc392dbf.jpg",
+        img: "https://i.pinimg.com/736x/e8/df/51/e8df513e3bc35b34e7a215fc20eb9cea.jpg",
         _createdOn: 1613551279012,
       },
       "8f414b4f-ab39-4d36-bedb-2ad69da9c830": {

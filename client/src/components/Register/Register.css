@@ -1,0 +1,86 @@
+.border-img {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  height: 300px;
+  opacity: 0.3;
+}
+
+.border-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+h2 {
+  margin-bottom: 5px;
+  color: #7d737b;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.login-img img {
+  width: 270px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.register-form input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  height: 16px;
+  display: block;
+}
+
+.button-login {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #d89fd1;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-login:hover {
+  background: #bf5094;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.message a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}

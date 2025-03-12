@@ -50,14 +50,14 @@ const AddProduct = () => {
   );
 
   return (
-    <div className="wrapper-big-create">
+    <div className="wrapper-perfume">
       <section id="create">
-        <div className="form">
+        <div className="form-wrap">
           <h2>
             Design Your <br /> Custom Perfume,
             <span className="single-perfume-name design-name">{name}!</span>
           </h2>
-          <form onSubmit={submitHandler} className="create-form">
+          <form onSubmit={submitHandler} className="perfume-form">
             <input
               type="text"
               name="flavor"
@@ -72,7 +72,7 @@ const AddProduct = () => {
               value={values.fragrance}
               onChange={changeHandler}
               id="fragrance"
-              placeholder="fragrance"
+              placeholder="fragrance notes"
             />
             <input
               type="text"
@@ -104,23 +104,23 @@ const AddProduct = () => {
               value={values.img}
               onChange={changeHandler}
               id="img"
-              placeholder="img"
+              placeholder="image"
             />
             {error && (
               <p className="field">
                 <span style={{ fontSize: "18px", color: "red" }}>{error}</span>
               </p>
             )}
-            <div className="buttons">
-              <button className="createButton" type="submit">
+            <div className="perfumeButtons">
+              <button className="perfumeButton" type="submit">
                 Create
               </button>
               <button
                 onClick={() => navigate("/products")}
-                className="createButton"
+                className="perfumeButton"
                 type="button"
               >
-                All Bars
+                All Products
               </button>
             </div>
           </form>
