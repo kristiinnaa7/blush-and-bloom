@@ -1,14 +1,15 @@
 import { useAuthContext } from "../context/AuthContext";
 import "./Profile.css";
-import profile from "../../assets/profile.jpg";
-import frame from "../../assets/profileframe.jpg";
+import bottle from "../../assets/perfume-bottle.jpg";
+import flowers from "../../assets/flowers.jpg";
+import flowers2 from "../../assets/flowers2.jpg";
 const Profile = () => {
   const { email } = useAuthContext();
   const name = email?.split("@")[0];
   return (
     <div className="profile">
       <div className="frame">
-        <img src={frame} alt="frame" />
+        <img src={bottle} alt="frame" />
       </div>
 
       <div className="profile-info">
@@ -20,6 +21,14 @@ const Profile = () => {
           <div>
             <strong>Email:</strong> <span className="new-line">{email}</span>
           </div>
+        </div>
+      </div>
+      <div className="flowers">
+        <div className="camellia">
+          <img src={flowers2} alt="flowers" />
+        </div>
+        <div className="camellia-two">
+          <img src={flowers} alt="flowers" />
         </div>
       </div>
     </div>

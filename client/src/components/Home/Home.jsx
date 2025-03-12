@@ -1,14 +1,11 @@
 import "./Home.css";
-import homehighlights from "../../assets/homehighlight.jpg";
+
+import paris from "../../assets/about.jpg";
 
 const Home = () => {
   return (
     <div className="home-page">
-      <img
-        className="home-highlights"
-        src={homehighlights}
-        alt="home highlights"
-      />
+      {/* <img className="home-highlights" src={paris} alt="home highlights" /> */}
       <div className="home-page-texts">
         <h1>
           Where <strong>Fragrance</strong> Meets <strong>Elegance</strong>
