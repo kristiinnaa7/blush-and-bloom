@@ -7,27 +7,24 @@
   justify-content: center;
   position: relative;
 }
-.home-page::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../../assets/blossoms.jpg") center top / cover no-repeat;
-  filter: blur(4px);
-  z-index: -1;
-}
-/* .home-highlights {
-  border-radius: 200px;
-  width: 900px;
-  height: 450px;
-  box-shadow: 0 0 35px 30px rgba(243, 231, 243, 0.667);
-} */
 
+.flower-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 190px;
+}
+
+.pink-flower {
+  width: 600px;
+  height: 600px;
+}
+
+.pearl-flower {
+  height: 750px;
+}
 .home-page-texts {
   position: absolute;
-  color: rgb(232, 90, 194);
+  color: rgb(12, 12, 12);
   text-align: center;
 }
 

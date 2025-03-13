@@ -5,8 +5,8 @@ import { Fragment, useState } from "react";
 
 import "./Login.css";
 
-import log from "../../assets/log.jpg";
-import logPhoto from "../../assets/bow.jpg"; // Ensure this image exists
+import log from "../../assets/goldframe.jpg";
+import logPhoto from "../../assets/ball.jpg";
 
 const initialValues = { email: "", password: "" };
 

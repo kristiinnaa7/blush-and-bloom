@@ -64,7 +64,7 @@ const AddProduct = () => {
               value={values.name}
               onChange={changeHandler}
               id="name"
-              placeholder="name"
+              placeholder="Name"
             />
             <input
               type="text"
@@ -72,7 +72,7 @@ const AddProduct = () => {
               value={values.fragrance}
               onChange={changeHandler}
               id="fragrance"
-              placeholder="fragrance notes"
+              placeholder="Fragrance notes"
             />
             <input
               type="text"
@@ -80,7 +80,7 @@ const AddProduct = () => {
               value={values.scent}
               onChange={changeHandler}
               id="scent"
-              placeholder="scent"
+              placeholder="Scent"
             />
             <input
               type="text"
@@ -88,7 +88,7 @@ const AddProduct = () => {
               value={values.size}
               onChange={changeHandler}
               id="size"
-              placeholder="size"
+              placeholder="Size"
             />
             <input
               type="text"
@@ -96,7 +96,7 @@ const AddProduct = () => {
               value={values.price}
               onChange={changeHandler}
               id="price"
-              placeholder="price"
+              placeholder="Price"
             />
             <input
               type="text"
@@ -104,7 +104,7 @@ const AddProduct = () => {
               value={values.img}
               onChange={changeHandler}
               id="img"
-              placeholder="image"
+              placeholder="Image"
             />
             {error && (
               <p className="field">

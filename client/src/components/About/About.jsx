@@ -1,6 +1,6 @@
 import "./About.css";
 
-import bottle from "../../assets/bottle.jpg";
+import bottle from "../../assets/diamondbottle.jpg";
 
 const About = () => {
   return (

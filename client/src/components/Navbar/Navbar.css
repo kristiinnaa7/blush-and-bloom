@@ -5,7 +5,7 @@
   padding: 0 50px;
   border: 1px solid #fffcf5;
   background: white;
-  color: rgb(240, 131, 200);
+  color: rgb(233, 136, 175);
   font-weight: 800;
 }
 
@@ -29,12 +29,12 @@
   background-color: rgb(252, 240, 251);
   padding: 10px 20px;
   border-radius: 20px;
-  border: 2px solid #514f506e;
+  border: 2px solid #91501c6e;
 }
 
 .nav-link.active {
   font-weight: bold;
-  color: #d764b4;
+  color: #d78e64;
 }
 
 .logo {
