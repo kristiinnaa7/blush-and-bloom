@@ -12,8 +12,8 @@ const SinglePerfume = ({ fragrance, img, name, price, scent, size }) => {
       <div className="name">Name: {name}</div>
       <div className="fragrance">Fragrance Notes: {fragrance}</div>
       <div className="scent">Scent: {scent}</div>
-      <div className="size">Size: {size}</div>
-      <div className="price">Price: {price}</div>
+      <div className="size">Size: {size}ml</div>
+      <div className="price">Price: ${price}</div>
       {/* <Link className="details-btn" to={`/products/${id}`}>
         Details
       </Link> */}

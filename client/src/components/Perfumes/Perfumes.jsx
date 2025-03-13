@@ -1,23 +1,52 @@
+import React, { useState } from "react";
 import SinglePerfume from "../SinglePerfume/SinglePerfume";
 
-const Perfumes = ({ perfumes }) => {
+const Parfumes = ({ perfumes }) => {
+  const [sortBy, setSortBy] = useState("price");
+
+  const sortPerfumes = (perfumes, sortBy) => {
+    return perfumes.sort((a, b) => {
+      if (sortBy === "price") {
+        return Number(a.price) - Number(b.price);
+      } else if (sortBy === "size") {
+        return Number(a.size) - Number(b.size);
+      }
+      return 0;
+    });
+  };
+
+  const handleSortChange = (event) => {
+    setSortBy(event.target.value);
+  };
+  const sortedPerfumes = sortPerfumes([...perfumes], sortBy);
+
   return perfumes.length > 0 ? (
-    <ul className="card-container">
-      {perfumes.map((perfume) => (
-        <SinglePerfume
-          key={perfume._id}
-          fragrance={perfume.fragrance}
-          img={perfume.img}
-          name={perfume.name}
-          price={perfume.price}
-          scent={perfume.scent}
-          size={perfume.size}
-        />
-      ))}
-    </ul>
+    <div>
+      <div className="sort-options">
+        <label htmlFor="sort">Sort by: </label>
+        <select id="sort" value={sortBy} onChange={handleSortChange}>
+          <option value="price">Price (Ascending Order)</option>
+          <option value="size">Size (Ascending Order)</option>
+        </select>
+      </div>
+
+      <ul className="card-container">
+        {sortedPerfumes.map((perfume) => (
+          <SinglePerfume
+            key={perfume._id}
+            fragrance={perfume.fragrance}
+            img={perfume.img}
+            name={perfume.name}
+            price={perfume.price}
+            scent={perfume.scent}
+            size={perfume.size}
+          />
+        ))}
+      </ul>
+    </div>
   ) : (
-    <div> No Perfumes</div>
+    <div>No perfumes</div>
   );
 };
 
-export default Perfumes;
+export default Parfumes;
