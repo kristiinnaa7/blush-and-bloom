@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "../../hooks/useForm";
 import { useCreatePerfume } from "../../hooks/usePerfumes";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../context/AuthContext";
 
 import "./AddProduct.css";
@@ -17,7 +17,7 @@ const initialValues = {
 
 const AddProduct = () => {
   const [error, setError] = useState("");
-  const { email } = useAuthContext();
+  const { isAuthenticated, email } = useAuthContext();
   const name = email?.split("@")[0];
   const navigate = useNavigate();
   const createPerfume = useCreatePerfume();
@@ -43,6 +43,17 @@ const AddProduct = () => {
       setError(err.message);
     }
   };
+
+  if (!isAuthenticated) {
+    return (
+      <div className="wrapper-perfume">
+        <h2>PLEASE LOG IN TO ADD PRODUCT</h2>
+        <NavLink to={Path.Login} className="">
+          <li>Login</li>
+        </NavLink>
+      </div>
+    );
+  }
 
   const { changeHandler, values, submitHandler } = useForm(
     initialValues,

@@ -16,6 +16,7 @@ import {
 import { Route, Routes } from "react-router-dom";
 import Path from "../path";
 import { AuthContextProvider } from "../components/context/AuthContext";
+import Details from "../components/Details/Details";
 
 const routes = [
   {
@@ -29,6 +30,10 @@ const routes = [
   {
     path: Path.Products,
     element: <Products />,
+  },
+  {
+    path: Path.Details,
+    element: <Details />,
   },
   {
     path: Path.AddProduct,

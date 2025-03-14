@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 import "./SinglePerfume.css";
 
-const SinglePerfume = ({ fragrance, img, name, price, scent, size }) => {
+const SinglePerfume = ({ fragrance, img, name, price, scent, size, id }) => {
   const { email } = useAuthContext();
   const username = email?.split("@")[0];
+
   return (
     <li className="card">
       <img src={img} alt={name} />
@@ -14,9 +15,9 @@ const SinglePerfume = ({ fragrance, img, name, price, scent, size }) => {
       <div className="scent">Scent: {scent}</div>
       <div className="size">Size: {size}ml</div>
       <div className="price">Price: ${price}</div>
-      {/* <Link className="details-btn" to={`/products/${id}`}>
+      <Link className="details-btn" to={`/products/${id}`}>
         Details
-      </Link> */}
+      </Link>
       {/* {isOwner && ( */}
       <div className="is-owner-deskr">
         <p className="text-before-pink-name">

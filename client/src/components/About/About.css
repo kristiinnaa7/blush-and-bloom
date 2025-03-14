@@ -22,11 +22,13 @@
   background-repeat: no-repeat;
   opacity: 0.3;
   z-index: -1;
+  filter: blur(10px);
 }
 
 .home-page-second img {
   width: 550px;
   height: 600px;
+  object-fit: cover;
   display: block;
   border-radius: 500px;
   box-shadow: 0 0 45px 40px rgb(255, 255, 255);
@@ -46,4 +48,12 @@
   margin: 20px 0;
   line-height: 1.5;
   width: 550px;
+}
+@media (max-width: 1230px) {
+  .home-page-second {
+    flex-direction: column;
+  }
+  .home-page-second img {
+    width: 390px;
+  }
 }

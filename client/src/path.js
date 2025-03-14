@@ -1,9 +1,8 @@
-import { Register } from "./components";
-
 const Path = {
   Home: "/",
   About: "/about",
   Products: "/products",
+  Detail: "/products/:id",
   AddProduct: "/add-product",
   Login: "/login",
   Logout: "/logout",

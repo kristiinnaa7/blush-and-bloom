@@ -5,7 +5,11 @@ import "./Products.css";
 const Products = () => {
   const [perfumes] = useAllPerfumes();
 
-  return <Perfumes perfumes={perfumes} />;
+  return (
+    <div className="products-wrapper">
+      <Perfumes perfumes={perfumes} />
+    </div>
+  );
 };
 
 export default Products;

@@ -1,0 +1,20 @@
+.best-sellers-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: url("../../assets/clouds.PNG") center top / cover no-repeat;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.best-sellers-title {
+  color: rgb(255, 253, 253);
+  text-shadow: 2px 2px rgb(4, 3, 3);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 70px;
+  font-family: "Lucida Handwriting";
+}
