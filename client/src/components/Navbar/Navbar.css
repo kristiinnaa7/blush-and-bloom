@@ -17,7 +17,6 @@
   gap: 50px;
   font-size: 25px;
 }
-
 .profile-options {
   justify-content: end;
 }
@@ -30,7 +29,6 @@
   border-radius: 20px;
   border: 2px solid #91501c6e;
 }
-
 .nav-link.active {
   font-weight: bold;
   color: #d78e64;
@@ -42,15 +40,17 @@
   padding: 10px;
   margin-left: 150px;
 }
-.mobile-profile-options {
-  display: none;
-}
-.mobile-nav-oprions {
-  display: none;
-}
+
 .burger-menu {
   display: none;
   cursor: pointer;
+}
+.mobile-profile-options {
+  display: none;
+}
+
+.mobile-nav-options {
+  display: none;
 }
 
 @media (max-width: 1600px) {
@@ -84,7 +84,6 @@
   .profile-options {
     display: none;
   }
-
   .navbar {
     margin: 0 auto;
   }
@@ -94,7 +93,7 @@
   }
 
   .mobile-profile-options,
-  .mobile-nav-oprions {
+  .mobile-nav-options {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -104,11 +103,13 @@
     height: 500px;
     z-index: 1;
   }
+
   .mobile-profile-options .nav-link {
     position: relative;
     top: 0px;
   }
-  .mobile-nav-oprions .nav-link {
+
+  .mobile-nav-options .nav-link {
     position: relative;
     top: 88px;
   }

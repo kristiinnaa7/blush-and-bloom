@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/app-logo.png";
 import "./Navbar.css";
 import { useAuthContext } from "../context/AuthContext";
-import { Fragment, useState, useEffect } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
@@ -20,15 +20,14 @@ const Navbar = () => {
         setMenuOpen(false);
       }
     };
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  console.log(menuOpen);
   return (
     <div className="navbar">
-      <div className={menuOpen ? "mobile-nav-options" : "nav-options"}></div>
-      <ul className="nav-options">
+      <ul className={menuOpen ? "mobile-nav-options" : "nav-options"}>
         <NavLink to={Path.About} className="nav-link">
           <li>About us</li>
         </NavLink>
@@ -42,7 +41,7 @@ const Navbar = () => {
       <NavLink to="/">
         <img className="logo" src={logo} alt="logo" />
       </NavLink>
-      <ul className="profile-options">
+      <ul className={menuOpen ? "mobile-profile-options" : "profile-options"}>
         {!isAuthenticated ? (
           <Fragment>
             <NavLink to={Path.Login} className="nav-link">
