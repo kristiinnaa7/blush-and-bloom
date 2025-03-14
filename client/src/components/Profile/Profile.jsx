@@ -1,8 +1,8 @@
 import { useAuthContext } from "../context/AuthContext";
 import "./Profile.css";
-import bottle from "../../assets/perfume-bottle.jpg";
-import flowers from "../../assets/flowers.jpg";
-import flowers2 from "../../assets/flowers2.jpg";
+import bottle from "../../assets/yellowbottle.jpg";
+import flowers from "../../assets/goldflower.jpg";
+import flowers2 from "../../assets/whiteflower.jpg";
 const Profile = () => {
   const { email } = useAuthContext();
   const name = email?.split("@")[0];
