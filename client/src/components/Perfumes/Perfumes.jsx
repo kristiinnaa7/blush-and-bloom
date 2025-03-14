@@ -5,7 +5,7 @@ const Parfumes = ({ perfumes }) => {
   const [sortBy, setSortBy] = useState("price");
 
   const sortPerfumes = (perfumes, sortBy) => {
-    return perfumes.sort((a, b) => {
+    return perfumes?.sort((a, b) => {
       if (sortBy === "price") {
         return Number(a.price) - Number(b.price);
       } else if (sortBy === "size") {

@@ -1,0 +1,70 @@
+.journeys-title {
+  color: rgba(184, 130, 148, 255);
+  text-shadow: 2px 2px rgb(4, 3, 3);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 70px;
+  font-family: "Lucida Handwriting";
+  margin-bottom: 10px;
+}
+
+.new-fragrances-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.perfume-card {
+  display: flex;
+  background-color: rgba(227, 206, 175, 255);
+  width: 630px;
+  height: 600px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.red {
+  background-color: rgba(85, 37, 40, 255);
+}
+.pink {
+  background-color: rgba(115, 80, 98, 255);
+}
+
+.brown {
+  background-color: rgba(105, 91, 77, 255);
+}
+
+.perfume-card:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.perfume-card img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.new-fragrances-description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: white;
+}
+
+.journey {
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+.new-fragrances-description h1 {
+  font-size: 42px;
+}
+
+.new-fragrances-description h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}

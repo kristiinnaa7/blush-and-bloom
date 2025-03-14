@@ -5,6 +5,7 @@ import pearlflower from "../../assets/pearl.jpg";
 import { NavLink } from "react-router-dom";
 import Path from "../../path";
 import BestSellers from "../BestSellers/BestSellers";
+import NewFragrances from "../newFragrances/newFragrances";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
         </div>
       </div>
       <BestSellers />
+      <NewFragrances />
     </>
   );
 };

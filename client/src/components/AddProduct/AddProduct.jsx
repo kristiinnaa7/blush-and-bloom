@@ -5,6 +5,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../context/AuthContext";
 
 import "./AddProduct.css";
+import Path from "../../path";
 
 const initialValues = {
   name: "",
