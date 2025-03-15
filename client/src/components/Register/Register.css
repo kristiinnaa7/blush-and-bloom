@@ -1,86 +1,112 @@
-.border-img {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 550px;
-  height: 300px;
-  opacity: 0.3;
-}
-
-.border-img img {
-  width: 100%;
-  height: auto;
-  display: block;
+.wrap-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
 
 .register {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.register-card {
+  display: flex;
+  width: 600px;
+  height: 380px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgb(228, 201, 187);
+  box-shadow: 0 14px 20px rgba(232, 110, 33, 0.1);
+}
+
+.register-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/satin.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.left-side-register {
+  flex: 1;
+  background: #ffe6cb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   text-align: center;
-  position: relative;
+  border: 1px solid rgb(228, 201, 187);
 }
 
-h2 {
-  margin-bottom: 5px;
-  color: #7d737b;
-  font-size: 30px;
-  font-weight: bold;
+.left-side-register h2 {
+  font-size: 27px;
+  color: #333;
 }
 
-.login-img img {
-  width: 270px;
-  height: 250px;
-  object-fit: cover;
+.right-side-register {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: white;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
 }
 
 .register-form input {
-  display: flex;
-  justify-content: center;
   width: 100%;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 17px;
+}
+
+.button-register {
+  width: 100%;
+  padding: 10px;
+  background: #ffb06b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 17px;
+}
+
+.button-register:hover {
+  background: #ff874f;
+}
+
+.message-register {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.message-register a {
+  color: rgb(236, 154, 66);
+  text-decoration: none;
 }
 
 .error-message {
   color: red;
   font-size: 14px;
-  height: 16px;
-  display: block;
-}
-
-.button-login {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background: #d89fd1;
-  color: white;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.button-login:hover {
-  background: #bf5094;
-}
-
-.message {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.message a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.message a:hover {
-  text-decoration: underline;
+  text-align: center;
 }

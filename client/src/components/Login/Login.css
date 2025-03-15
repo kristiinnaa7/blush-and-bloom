@@ -1,98 +1,101 @@
-.border-img {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 600px;
-  height: 100px;
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
 
-.border-img img {
+.login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  background-image: url("../../assets/satin.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+  filter: blur(10px);
 }
 
 .login {
-  position: absolute;
-  top: 78%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  width: 600px;
+  height: 350px;
+  background: white;
+  box-shadow: 0 14px 20px rgba(232, 110, 33, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgb(228, 201, 187);
+}
+
+.left-side {
+  flex: 1;
+  background: #ffe6cb;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  background-color: rgba(254, 254, 252, 0.88);
-  width: 250px;
-  height: 450px;
+  justify-content: center;
+  border: 1px solid rgb(228, 201, 187);
+}
+
+.left-side h2 {
+  font-size: 27px;
+  color: #333;
+}
+
+.right-side {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
-  border-radius: 95px;
-  box-shadow: 0px 0px 20px 8px rgba(254, 253, 253, 0.719);
+  background: white;
 }
 
-h2 {
-  margin-bottom: 30px;
-  color: #7d737b;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.login-img img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0px 0px 20px 8px rgba(254, 253, 253, 0.719);
+.form {
+  width: 100%;
+  max-width: 250px;
 }
 
 .login-form input {
-  display: flex;
-  justify-content: center;
   width: 100%;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 17px;
+}
+
+.button-login {
+  width: 100%;
+  padding: 10px;
+  background: #ffb06b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 17px;
+}
+
+.button-login:hover {
+  background: #ff874f;
+}
+
+.message {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.message a {
+  color: #fa8840;
+  text-decoration: none;
 }
 
 .error-message {
   color: red;
   font-size: 14px;
-  height: 16px;
-  display: block;
-}
-
-.button-login {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background: #d8ba9f;
-  color: white;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.button-login:hover {
-  background: #bf5094;
-}
-
-.message {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.message a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.message a:hover {
-  text-decoration: underline;
 }

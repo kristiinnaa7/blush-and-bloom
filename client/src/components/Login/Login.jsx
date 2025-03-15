@@ -1,12 +1,9 @@
 import { useForm } from "../../hooks/useForm";
 import { useLogin } from "../../hooks/useAuth";
 import { Link, useNavigate } from "react-router-dom";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 
 import "./Login.css";
-
-import log from "../../assets/rose-gold.jpg";
-import logPhoto from "../../assets/ball.jpg";
 
 const initialValues = { email: "", password: "" };
 
@@ -45,54 +42,50 @@ const Login = () => {
   );
 
   return (
-    <Fragment>
-      <div className="border-img">
-        <img src={log} alt="Background" />
-      </div>
+    <div className="page-container">
       <section className="login">
-        <div className="form">
+        <div className="left-side">
           <h2>Login</h2>
+        </div>
+        <div className="right-side">
+          <div className="form">
+            <form className="login-form" onSubmit={submitHandler}>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                value={values.email}
+                onChange={changeHandler}
+                placeholder="email"
+              />
 
-          <div className="login-img">
-            <img src={logPhoto} alt="Login Image" />
-          </div>
+              <input
+                type="password"
+                name="password"
+                value={values.password}
+                onChange={changeHandler}
+                id="password"
+                placeholder="password"
+              />
 
-          <form className="login-form" onSubmit={submitHandler}>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              value={values.email}
-              onChange={changeHandler}
-              placeholder="email"
-            />
+              {error && (
+                <p className="field">
+                  <span className="error-message">{error}</span>
+                </p>
+              )}
 
-            <input
-              type="password"
-              name="password"
-              value={values.password}
-              onChange={changeHandler}
-              id="password"
-              placeholder="password"
-            />
+              <button className="button-login" type="submit">
+                Login
+              </button>
 
-            {error && (
-              <p className="field">
-                <span className="error-message">{error}</span>
+              <p className="message">
+                Not registered? <Link to={"/register"}>Create an account</Link>
               </p>
-            )}
-
-            <button className="button-login" type="submit">
-              Login
-            </button>
-
-            <p className="message">
-              Not registered? <Link to={"/register"}>Create an account</Link>
-            </p>
-          </form>
+            </form>
+          </div>
         </div>
       </section>
-    </Fragment>
+    </div>
   );
 };
 

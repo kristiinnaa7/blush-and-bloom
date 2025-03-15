@@ -1,10 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useRegister } from "../../hooks/useAuth";
 import { useForm } from "../../hooks/useForm";
-import { Fragment, useState } from "react";
-
-import log from "../../assets/log.jpg";
-import logPhoto from "../../assets/bow.jpg";
+import { useState } from "react";
+import "./Register.css";
 
 const intionalValues = {
   email: "",
@@ -49,54 +47,50 @@ const Register = () => {
   );
 
   return (
-    <Fragment>
-      <div className="border-img">
-        <img src={log} alt="Background" />
-      </div>
-      <section id="register">
-        <div className="form-register">
-          <h2>Register</h2>
-          <div className="login-img">
-            <img src={logPhoto} alt="Login Image" />
+    <div className="wrap-container">
+      <section className="register">
+        <div className="register-card">
+          <div className="left-side-register">
+            <h2>Register</h2>
           </div>
-          <form onSubmit={submitHandler} className="register-form">
-            <input
-              type="text"
-              name="email"
-              value={values.email}
-              onChange={changeHandler}
-              id="register-email"
-              placeholder="email"
-            />
-            <input
-              type="password"
-              name="password"
-              value={values.password}
-              onChange={changeHandler}
-              id="register-password"
-              placeholder="password"
-            />
-            <input
-              type="password"
-              name="rePassword"
-              id="repeat-password"
-              value={values.rePassword}
-              onChange={changeHandler}
-              placeholder="repeat password"
-            />
-            {error && (
-              <p className="field">
-                <span style={{ fontSize: "18px", color: "red" }}>{error}</span>
+          <div className="right-side-register">
+            <form onSubmit={submitHandler} className="register-form">
+              <input
+                type="text"
+                name="email"
+                value={values.email}
+                onChange={changeHandler}
+                id="register-email"
+                placeholder="email"
+              />
+              <input
+                type="password"
+                name="password"
+                value={values.password}
+                onChange={changeHandler}
+                id="register-password"
+                placeholder="password"
+              />
+              <input
+                type="password"
+                name="rePassword"
+                id="repeat-password"
+                value={values.rePassword}
+                onChange={changeHandler}
+                placeholder="repeat password"
+              />
+              {error && <p className="error-message">{error}</p>}
+              <button className="button-register" type="submit">
+                Register
+              </button>
+              <p className="message-register">
+                Already registered? <Link to={"/login"}>Login</Link>
               </p>
-            )}
-            <button type="submit">register</button>
-            <p className="message">
-              Already registered? <Link to={"/login"}>Login</Link>
-            </p>
-          </form>
+            </form>
+          </div>
         </div>
       </section>
-    </Fragment>
+    </div>
   );
 };
 
