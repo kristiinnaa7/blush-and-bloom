@@ -40,7 +40,7 @@
 }
 
 .home-page button {
-  background-color: #e087c4;
+  background-color: #e0ae87;
   color: white;
   padding: 15px 25px;
   margin-top: 30px;
@@ -52,7 +52,7 @@
 }
 
 .home-page button:hover {
-  background-color: #e6006d;
+  background-color: #e62e00;
 }
 
 @media (max-width: 980px) {

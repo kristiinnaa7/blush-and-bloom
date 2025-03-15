@@ -1,3 +1,7 @@
+.products-wrapper {
+  padding: 20px;
+}
+
 .products-wrapper::before {
   content: "";
   position: absolute;

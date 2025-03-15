@@ -22,6 +22,7 @@ const SinglePerfume = ({ fragrance, img, name, price, scent, size, id }) => {
       <div className="is-owner-deskr">
         <p className="text-before-pink-name">
           Custom-Made Just for You,
+          <br />
           <span className="custumerNameSpan">{username}!</span>
         </p>
       </div>

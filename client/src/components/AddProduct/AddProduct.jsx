@@ -19,7 +19,6 @@ const initialValues = {
 const AddProduct = () => {
   const [error, setError] = useState("");
   const { isAuthenticated, email } = useAuthContext();
-  const name = email?.split("@")[0];
   const navigate = useNavigate();
   const createPerfume = useCreatePerfume();
   const createHandler = async (values) => {
@@ -49,7 +48,7 @@ const AddProduct = () => {
     return (
       <div className="wrapper-perfume">
         <h2>PLEASE LOG IN TO ADD PRODUCT</h2>
-        <NavLink to={Path.Login} className="">
+        <NavLink to={Path.Login} className="addproduct-login-btn">
           <li>Login</li>
         </NavLink>
       </div>
