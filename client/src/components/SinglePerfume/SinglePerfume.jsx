@@ -1,7 +1,8 @@
 import { useAuthContext } from "../context/AuthContext";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import "./SinglePerfume.css";
+import Path from "../../path";
 
 const SinglePerfume = ({ fragrance, img, name, price, scent, size, id }) => {
   const { email } = useAuthContext();
@@ -26,6 +27,13 @@ const SinglePerfume = ({ fragrance, img, name, price, scent, size, id }) => {
           <span className="custumerNameSpan">{username}!</span>
         </p>
       </div>
+      <div className="edit-delete-btns">
+        <NavLink to={Path.EditProduct}>
+          <button className="edit-btn">Edit</button>
+        </NavLink>
+        <button className="delete-btn">Delete</button>
+      </div>
+
       {/* )} */}
     </li>
   );

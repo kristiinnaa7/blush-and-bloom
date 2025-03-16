@@ -12,6 +12,8 @@ import Footer from "./Footer/Footer";
 import Register from "./Register/Register";
 import AuthGuard from "./Guards/AuthGuard";
 import LoginGuard from "./Guards/LoginGuard";
+import EditProduct from "./EditProduct/EditProduct";
+import Details from "./Details/Details";
 
 export {
   About,
@@ -28,4 +30,6 @@ export {
   Register,
   AuthGuard,
   LoginGuard,
+  EditProduct,
+  Details,
 };

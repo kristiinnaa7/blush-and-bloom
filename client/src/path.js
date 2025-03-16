@@ -9,6 +9,8 @@ const Path = {
   Profile: "/profile",
   Error: "*",
   Register: "/register",
+  EditProduct: "/edit-product",
+  Details: "/details",
 };
 
 export default Path;

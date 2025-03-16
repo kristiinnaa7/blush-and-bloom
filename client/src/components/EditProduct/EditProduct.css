@@ -1,0 +1,104 @@
+.wrapper-perfume-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 900px;
+  position: relative;
+}
+.wrapper-perfume-edit h2 {
+  margin-right: 40px;
+}
+
+.wrapper-perfume-edit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/satin.jpg") center top / cover no-repeat;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.perfume-form-edit {
+  padding: 50px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  background: linear-gradient(
+    rgba(255, 207, 179, 0.872),
+    rgba(205, 239, 245, 0.8)
+  );
+}
+
+.perfume-form-edit h2 {
+  color: #4d7089;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.single-perfume-name-edit {
+  padding-left: 5px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 32px;
+  display: block;
+  color: white;
+}
+
+.perfume-form-edit input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.perfume-form-edit input:focus {
+  border-color: #ff3381;
+  box-shadow: 0px 0px 8px rgba(255, 51, 129, 0.4);
+}
+
+.perfumeButtons-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.perfumeButton-edit {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  background: #fa8d57;
+  color: white;
+}
+
+.perfumeButton-edit:hover {
+  background: #e43c79;
+  transform: scale(1.05);
+}
+
+.perfumeButton-edit:last-child {
+  background: #4d7089;
+}
+
+.perfumeButton-edit:last-child:hover {
+  background: #3a5669;
+}
+
+.field span {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}

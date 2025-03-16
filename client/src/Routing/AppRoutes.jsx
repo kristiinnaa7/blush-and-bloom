@@ -12,11 +12,12 @@ import {
   Register,
   LoginGuard,
   AuthGuard,
+  EditProduct,
+  Details,
 } from "../components";
 import { Route, Routes } from "react-router-dom";
 import Path from "../path";
 import { AuthContextProvider } from "../components/context/AuthContext";
-import Details from "../components/Details/Details";
 
 const routes = [
   {
@@ -51,6 +52,10 @@ const routes = [
   {
     path: Path.Register,
     element: <Register />,
+  },
+  {
+    path: Path.EditProduct,
+    element: <EditProduct />,
   },
 ];
 

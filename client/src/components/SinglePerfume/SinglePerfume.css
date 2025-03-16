@@ -64,3 +64,32 @@
   color: #000;
   cursor: pointer;
 }
+
+.edit-delete-btns {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-top: 10px;
+  padding: 10px;
+  gap: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-btn {
+  background-color: #f8edd6;
+}
+
+.delete-btn {
+  background-color: #edec9e;
+}
