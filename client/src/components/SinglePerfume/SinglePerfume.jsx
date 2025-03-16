@@ -4,7 +4,16 @@ import { Link, NavLink } from "react-router-dom";
 import "./SinglePerfume.css";
 import Path from "../../path";
 
-const SinglePerfume = ({ fragrance, img, name, price, scent, size, id }) => {
+const SinglePerfume = ({
+  fragrance,
+  img,
+  name,
+  price,
+  scent,
+  size,
+  id,
+  isOwner,
+}) => {
   const { email } = useAuthContext();
   const username = email?.split("@")[0];
 
@@ -19,22 +28,21 @@ const SinglePerfume = ({ fragrance, img, name, price, scent, size, id }) => {
       <Link className="details-btn" to={`/products/${id}`}>
         Details
       </Link>
-      {/* {isOwner && ( */}
-      <div className="is-owner-deskr">
-        <p className="text-before-pink-name">
-          Custom-Made Just for You,
-          <br />
-          <span className="custumerNameSpan">{username}!</span>
-        </p>
-      </div>
-      <div className="edit-delete-btns">
-        <NavLink to={Path.EditProduct}>
-          <button className="edit-btn">Edit</button>
-        </NavLink>
-        <button className="delete-btn">Delete</button>
-      </div>
-
-      {/* )} */}
+      {isOwner && (
+        <div className="is-owner-deskr">
+          <p className="text-before-pink-name">
+            Custom-Made Just for You,
+            <br />
+            <span className="custumerNameSpan">{username}!</span>
+          </p>
+        </div>
+      )}
+      {/* //       <div className="edit-delete-btns">
+//         <NavLink to={Path.EditProduct}>
+//           <button className="edit-btn">Edit</button>
+//         </NavLink>
+//         <button className="delete-btn">Delete</button>
+//       </div> */}
     </li>
   );
 };

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import SinglePerfume from "../SinglePerfume/SinglePerfume";
+import { useAuthContext } from "../context/AuthContext";
 
 const Parfumes = ({ perfumes }) => {
   const [sortBy, setSortBy] = useState("price");
+  const { userId } = useAuthContext();
 
   const sortPerfumes = (perfumes, sortBy) => {
     return perfumes?.sort((a, b) => {
@@ -40,6 +42,8 @@ const Parfumes = ({ perfumes }) => {
             price={perfume.price}
             scent={perfume.scent}
             size={perfume.size}
+            isOwner={userId === perfume._ownerId}
+            id={perfume._id}
           />
         ))}
       </ul>

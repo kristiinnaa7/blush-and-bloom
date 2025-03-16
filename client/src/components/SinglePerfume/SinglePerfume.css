@@ -65,7 +65,7 @@
   cursor: pointer;
 }
 
-.edit-delete-btns {
+/* .edit-delete-btns {
   display: flex;
   justify-content: center;
   width: 50%;
@@ -92,4 +92,4 @@
 
 .delete-btn {
   background-color: #edec9e;
-}
+} */
