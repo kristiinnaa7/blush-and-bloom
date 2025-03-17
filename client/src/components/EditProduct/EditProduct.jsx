@@ -15,7 +15,7 @@ const initialValues = {
 
 const EditProduct = () => {
   const { id } = useParams();
-  const [product, setProduct] = usegetOnePerfumeById(id);
+  const [product] = usegetOnePerfumeById(id);
   const navigate = useNavigate();
 
   const { changeHandler, submitHandler, values, setValues } = useForm(
@@ -24,7 +24,7 @@ const EditProduct = () => {
       try {
         await perfumeApi.update(id, values);
         navigate(`/products/${id}`);
-      } catch (error) {
+      } catch (err) {
         throw new Error(err.message);
       }
     }
@@ -47,7 +47,7 @@ const EditProduct = () => {
           <form onSubmit={submitHandler} className="perfume-form-edit">
             <input
               type="text"
-              name="flavor"
+              name="name"
               value={values.name}
               onChange={changeHandler}
               id="name"
@@ -93,11 +93,7 @@ const EditProduct = () => {
               id="img"
               placeholder="Image"
             />
-            {error && (
-              <p className="field">
-                <span style={{ fontSize: "18px", color: "red" }}>{error}</span>
-              </p>
-            )}
+
             <div className="perfumeButtons-edit">
               <button className="perfumeButton-edit" type="submit">
                 Edit

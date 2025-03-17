@@ -71,7 +71,7 @@ const AddProduct = () => {
           <form onSubmit={submitHandler} className="perfume-form">
             <input
               type="text"
-              name="flavor"
+              name="name"
               value={values.name}
               onChange={changeHandler}
               id="name"
