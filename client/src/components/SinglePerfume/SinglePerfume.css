@@ -34,13 +34,6 @@
   color: #352e2b;
 }
 
-.card .price {
-  font-size: 18px;
-  font-weight: bold;
-  color: #7d462e;
-  margin-top: 10px;
-}
-
 .card .is-owner-deskr {
   margin-top: 10px;
   font-size: 14px;
@@ -56,9 +49,27 @@
   font-weight: bold;
   color: #000;
 }
+.card .name {
+  font-size: 25px;
+  background-color: rgb(245, 242, 239);
+  color: #140906;
+  margin-top: 10px;
+}
+
+.card .fragrance,
+.card .scent,
+.card .size,
+.card .price {
+  font-size: 17px;
+  margin-top: 10px;
+}
 .details-btn {
   text-decoration: none;
   color: #333;
+  background-color: #fab09b;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 10px;
 }
 .details-btn:hover {
   color: #000;

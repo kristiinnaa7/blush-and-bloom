@@ -30,7 +30,11 @@ const NewFragrances = () => {
       <div className="journeys-title">Perfume Journeys</div>
       <div className="new-fragrances-wrapper">
         {journeys.map((journey) => (
-          <div className={`perfume-card ${journey.color}`}>
+          <div
+            key={journey.name}
+            className={`perfume-card ${journey.color}`}
+            onCLick={() => navigate(`/new-fragrances/${journey.name}`)}
+          >
             <img src={journey.img} />
             <div className="new-fragrances-description">
               <h1 className="journey">Journey to the</h1>

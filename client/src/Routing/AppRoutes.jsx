@@ -14,6 +14,7 @@ import {
   AuthGuard,
   EditProduct,
   Details,
+  SingleFragranceDestination,
 } from "../components";
 import { Route, Routes } from "react-router-dom";
 import Path from "../path";
@@ -56,6 +57,10 @@ const routes = [
   {
     path: Path.EditProduct,
     element: <EditProduct />,
+  },
+  {
+    path: Path.FragranceDestination,
+    element: <SingleFragranceDestination />,
   },
 ];
 
