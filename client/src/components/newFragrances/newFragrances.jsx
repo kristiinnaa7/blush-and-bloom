@@ -3,37 +3,44 @@ import bali from "../../assets/bali.jpg";
 import malaysia from "../../assets/malaysia.jpg";
 import middleEast from "../../assets/middleeast.jpg";
 import "./NewFragrances.css";
+import { useNavigate } from "react-router-dom";
 
 const NewFragrances = () => {
+  const navigate = useNavigate();
+
   const journeys = [
     {
       img: middleEast,
       destination: "Middle East",
       description: "Amber Musk Sandalwood",
       color: "pink",
+      slug: "middle-east",
     },
     {
       img: bali,
       destination: "Bali",
       description: "Lotus & Frangipani Flower",
       color: "red",
+      slug: "bali",
     },
     {
       img: malaysia,
       destination: "Road of Malaysia",
       description: "Jasmine & Tropical Flower",
       color: "brown",
+      slug: "malaysia",
     },
   ];
+
   return (
     <Fragment>
       <div className="journeys-title">Perfume Journeys</div>
       <div className="new-fragrances-wrapper">
         {journeys.map((journey) => (
           <div
-            key={journey.name}
+            key={journey.destination}
             className={`perfume-card ${journey.color}`}
-            onCLick={() => navigate(`/new-fragrances/${journey.name}`)}
+            onClick={() => navigate(`/new-fragrances/${journey.slug}`)}
           >
             <img src={journey.img} />
             <div className="new-fragrances-description">

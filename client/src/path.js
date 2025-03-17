@@ -10,7 +10,7 @@ const Path = {
   Profile: "/profile",
   Error: "*",
   Register: "/register",
-  FragranceDestination: "new-fragrances/:destination",
+  FragranceDestination: "/new-fragrances/:destination",
 };
 
 export default Path;
