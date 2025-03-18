@@ -27,18 +27,16 @@ const SingleFragranceDestination = () => {
         </div>
       </div>
 
-      <div className="perfume-info">
-        <div className="perfume-content">
-          <div className="text-content">
-            <h2> {desiredDestination.perfume}</h2>
-            <p>{desiredDestination.perfumeDescription}</p>
-          </div>
-          <img
-            className="perfume-img-destination"
-            src={desiredDestination.perfumeImg}
-            alt={desiredDestination.perfume}
-          />
+      <div className="perfume-content">
+        <div className="text-content">
+          <h2> {desiredDestination.perfume}</h2>
+          <p>{desiredDestination.perfumeDescription}</p>
         </div>
+        <img
+          className="perfume-img-destination"
+          src={desiredDestination.perfumeImg}
+          alt={desiredDestination.perfume}
+        />
       </div>
     </div>
   );
