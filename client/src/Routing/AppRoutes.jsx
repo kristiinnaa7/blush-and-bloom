@@ -41,19 +41,9 @@ const routes = [
     path: Path.AddProduct,
     element: <AddProduct />,
   },
-  {
-    path: Path.Login,
-    element: <Login />,
-  },
-  {
-    path: Path.Profile,
-    element: <Profile />,
-  },
+
   { path: Path.Error, element: <Page404 /> },
-  {
-    path: Path.Register,
-    element: <Register />,
-  },
+
   {
     path: Path.EditProduct,
     element: <EditProduct />,
@@ -79,6 +69,10 @@ const AppRoutes = () => {
         <Route element={<AuthGuard />}>
           <Route path={Path.Logout} element={<Logout />} />
           <Route path={Path.Profile} element={<Profile />} />
+        </Route>
+        <Route element={<LoginGuard />}>
+          <Route path={Path.Login} element={<Login />} />
+          <Route path={Path.Register} element={<Register />} />
         </Route>
       </Routes>
       <Footer />
