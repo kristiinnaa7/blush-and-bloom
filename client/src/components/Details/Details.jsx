@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { DeletePerfume, usegetOnePerfumeById } from "../../hooks/usePerfumes";
+import { deletePerfume, usegetOnePerfumeById } from "../../hooks/usePerfumes";
 import { useAuthContext } from "../context/AuthContext";
 import "./Details.css";
 
@@ -19,7 +19,7 @@ const Details = () => {
 
   const barDeleteHandler = async () => {
     try {
-      await DeletePerfume(id);
+      await deletePerfume(id);
       navigate("/products");
     } catch (err) {
       throw new Error(err.message);
