@@ -5,6 +5,7 @@ import {
   usegetOnePerfumeById,
 } from "../../hooks/usePerfumes";
 import { useAuthContext } from "../context/AuthContext";
+import "./Details.css";
 
 const Details = () => {
   const { id } = useParams();
@@ -34,15 +35,15 @@ const Details = () => {
   };
 
   return (
-    <div>
-      <div>
-        <img src={perfume.img} alt={perfume.name} />
+    <div className="details-wrapper">
+      <div className="details-card">
+        <img className="details-img" src={perfume.img} alt={perfume.name} />
         <div className="name">Name: {perfume.name}</div>
         <div className="fragrance">Fragrance Notes: {perfume.fragrance}</div>
         <div className="scent">Scent: {perfume.scent}</div>
         <div className="size">Size: {perfume.size}ml</div>
         <div className="price">Price: ${perfume.price}</div>
-        <div className="description">Description: ${perfume.description}</div>
+        {/* <div className="description">Description: ${perfume.description}</div> */}
       </div>
       <button onClick={() => navigate("/products")}>All Perfumes</button>
       {isOwner && (

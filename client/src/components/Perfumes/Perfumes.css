@@ -1,0 +1,22 @@
+.sort-options {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-options .label {
+  background-color: white;
+  padding: 7px 10px;
+  border-radius: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.sort-options select {
+  background-color: white;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

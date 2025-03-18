@@ -1,0 +1,122 @@
+.details-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  text-align: center;
+}
+
+.details-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/satin.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.details-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.details-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffb066;
+  margin-bottom: 10px;
+}
+
+.fragrance,
+.scent,
+.size,
+.price,
+.description {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-weight: bold;
+  color: #d9534f;
+  font-size: 20px;
+}
+
+button {
+  background: linear-gradient(135deg, #ffbf66, #ffdd99);
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff4da6, #ff85b5);
+}
+
+#edit-btn button {
+  background: linear-gradient(135deg, #f0ad4e, #f8c471);
+}
+
+#edit-btn button:hover {
+  background: linear-gradient(135deg, #e99a3a, #f5b661);
+}
+
+#delete-btn {
+  background: linear-gradient(135deg, #d9534f, #e57373);
+}
+
+#delete-btn:hover {
+  background: linear-gradient(135deg, #c43d3a, #d66a6a);
+}
+
+.pop-up-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 25px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+}
+
+.pop-up-btns {
+  margin-top: 15px;
+}
+
+.pop-up-btns button {
+  background: linear-gradient(135deg, #5bc0de, #76d1ea);
+}
+
+.pop-up-btns button:hover {
+  background: linear-gradient(135deg, #46b8da, #60c7e5);
+}

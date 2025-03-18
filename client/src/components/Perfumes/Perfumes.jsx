@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SinglePerfume from "../SinglePerfume/SinglePerfume";
 import { useAuthContext } from "../context/AuthContext";
+import "./Perfumes.css";
 
 const Parfumes = ({ perfumes }) => {
   const [sortBy, setSortBy] = useState("price");
@@ -25,7 +26,9 @@ const Parfumes = ({ perfumes }) => {
   return perfumes.length > 0 ? (
     <div>
       <div className="sort-options">
-        <label htmlFor="sort">Sort by: </label>
+        <label className="label" htmlFor="sort">
+          Sort by:{" "}
+        </label>
         <select id="sort" value={sortBy} onChange={handleSortChange}>
           <option value="price">Price (Ascending Order)</option>
           <option value="size">Size (Ascending Order)</option>
