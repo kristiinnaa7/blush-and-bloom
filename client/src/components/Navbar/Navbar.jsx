@@ -1,7 +1,6 @@
 import Path from "../../path";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/orange-logo.png";
-
 import "./Navbar.css";
 import { useAuthContext } from "../context/AuthContext";
 import { Fragment, useEffect, useState } from "react";

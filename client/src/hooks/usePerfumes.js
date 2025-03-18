@@ -40,6 +40,6 @@ export function useCreatePerfume() {
   return perfumeCreateHandler;
 }
 
-export function useDeletePerfume(id) {
+export function deletePerfume(id) {
   request.del(`http://localhost:3030/data/perfumes/${id}`);
 }

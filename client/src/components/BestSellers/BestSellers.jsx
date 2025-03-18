@@ -1,6 +1,7 @@
 import Perfumes from "../Perfumes/Perfumes";
 import { useAllPerfumes } from "../../hooks/usePerfumes";
 import "./BestSellers.css";
+
 const BestSellers = () => {
   const [perfumes] = useAllPerfumes();
   const bestSellerPerfumes = perfumes?.filter(

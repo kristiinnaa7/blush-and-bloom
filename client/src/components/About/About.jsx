@@ -1,5 +1,4 @@
 import "./About.css";
-
 import bottle from "../../assets/diamondbottle.jpg";
 
 const About = () => {

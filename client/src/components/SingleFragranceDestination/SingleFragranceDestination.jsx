@@ -1,7 +1,5 @@
 import { useParams } from "react-router-dom";
-
 import { destinations } from "../../data";
-
 import "./SingleFragranceDestination.css";
 
 const SingleFragranceDestination = () => {

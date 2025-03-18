@@ -3,6 +3,7 @@ import "./Profile.css";
 import bottle from "../../assets/yellowbottle.jpg";
 import flowers from "../../assets/goldflower.jpg";
 import flowers2 from "../../assets/whiteflower.jpg";
+
 const Profile = () => {
   const { email } = useAuthContext();
   const name = email?.split("@")[0];

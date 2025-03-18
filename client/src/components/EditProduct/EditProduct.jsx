@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useForm } from "../../hooks/useForm";
 import * as perfumeApi from "../../api/perfumes-api";
 import "./EditProduct.css";
+
 const initialValues = {
   name: "",
   fragrance: "",

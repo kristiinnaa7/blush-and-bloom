@@ -1,5 +1,4 @@
 import "./Home.css";
-
 import pinkflower from "../../assets/pink.jpg";
 import pearlflower from "../../assets/pearl.jpg";
 import { NavLink } from "react-router-dom";
