@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
 import {
   useDeletePerfume,
@@ -43,7 +43,6 @@ const Details = () => {
         <div className="scent">Scent: {perfume.scent}</div>
         <div className="size">Size: {perfume.size}ml</div>
         <div className="price">Price: ${perfume.price}</div>
-        {/* <div className="description">Description: ${perfume.description}</div> */}
       </div>
       <button onClick={() => navigate("/products")}>All Perfumes</button>
       {isOwner && (

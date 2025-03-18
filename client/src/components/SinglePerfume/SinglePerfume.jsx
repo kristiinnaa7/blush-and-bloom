@@ -37,12 +37,6 @@ const SinglePerfume = ({
           </p>
         </div>
       )}
-      {/* //       <div className="edit-delete-btns">
-//         <NavLink to={Path.EditProduct}>
-//           <button className="edit-btn">Edit</button>
-//         </NavLink>
-//         <button className="delete-btn">Delete</button>
-//       </div> */}
     </li>
   );
 };

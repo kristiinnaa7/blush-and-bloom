@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import SinglePerfume from "../SinglePerfume/SinglePerfume";
 import { useAuthContext } from "../context/AuthContext";
 import "./Perfumes.css";
 
-const Parfumes = ({ perfumes }) => {
+const Parfumes = ({ perfumes = [] }) => {
   const [sortBy, setSortBy] = useState("price");
   const { userId } = useAuthContext();
 

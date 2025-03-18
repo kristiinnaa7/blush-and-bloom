@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useRegister } from "../../hooks/useAuth";
 import { useForm } from "../../hooks/useForm";
 import { useState } from "react";
+
 import "./Register.css";
 
 const intionalValues = {

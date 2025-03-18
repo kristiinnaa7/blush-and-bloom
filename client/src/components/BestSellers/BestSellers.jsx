@@ -1,4 +1,3 @@
-import React, { Fragment } from "react";
 import Perfumes from "../Perfumes/Perfumes";
 import { useAllPerfumes } from "../../hooks/usePerfumes";
 import "./BestSellers.css";

@@ -1,36 +1,10 @@
-import React, { Fragment } from "react";
-import bali from "../../assets/bali.jpg";
-import malaysia from "../../assets/malaysia.jpg";
-import middleEast from "../../assets/middleeast.jpg";
+import { Fragment } from "react";
+import { journeys } from "../../data";
 import "./NewFragrances.css";
 import { useNavigate } from "react-router-dom";
 
 const NewFragrances = () => {
   const navigate = useNavigate();
-
-  const journeys = [
-    {
-      img: middleEast,
-      destination: "Middle East",
-      description: "Amber Musk Sandalwood",
-      color: "pink",
-      slug: "middle-east",
-    },
-    {
-      img: bali,
-      destination: "Bali",
-      description: "Lotus & Frangipani Flower",
-      color: "red",
-      slug: "bali",
-    },
-    {
-      img: malaysia,
-      destination: "Road of Malaysia",
-      description: "Jasmine & Tropical Flower",
-      color: "brown",
-      slug: "malaysia",
-    },
-  ];
 
   return (
     <Fragment>

@@ -1,12 +1,14 @@
-import React from "react";
 import { useParams } from "react-router-dom";
+
 import middleeast from "../../assets/middle-east.jpg";
 import amber from "../../assets/harmain.jpg";
 import baarong from "../../assets/baarong.jpg";
 import bali from "../../assets/bali-img.jpg";
 import malaysia from "../../assets/malay.jpg";
 import auphorie from "../../assets/auphorie.jpg";
+
 import "./SingleFragranceDestination.css";
+
 const SingleFragranceDestination = () => {
   const { destination } = useParams();
 
