@@ -1,61 +1,83 @@
 .single-destination {
   display: flex;
   flex-direction: column;
+  gap: 40px;
   align-items: center;
-  padding: 20px;
+}
+
+.destination-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.destination-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.destination-img {
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
-}
-
-.single-destination h1 {
-  font-size: 35px;
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
-  font-weight: bold;
-}
-
-.single-destination p {
-  font-size: 20px;
-  color: #555;
-  line-height: 1.6;
-  max-width: 900px;
-  margin: 0 20px 20px;
-  text-align: center;
-}
-
-.single-destination img {
-  max-width: 100%;
-  height: auto;
+  max-height: 1000px;
+  height: 90%;
+  display: block;
   border-radius: 10px;
-  margin: 20px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.text-overlay h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.text-overlay p {
+  font-size: 1.2rem;
 }
 
 .perfume-info {
-  text-align: center;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
 }
 
-.perfume-info h2 {
-  font-size: 30px;
-  margin-bottom: 10px;
-  color: #444;
+.perfume-content {
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  gap: 20px;
+  width: 100%;
 }
 
-.perfume-info p {
-  font-size: 20px;
-  color: #666;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+.text-content {
+  flex: 1;
 }
 
-.perfume-info img {
-  width: 300px;
+.text-content h2 {
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+.perfume-img-destination {
+  width: 400px;
   height: auto;
-  margin-top: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
