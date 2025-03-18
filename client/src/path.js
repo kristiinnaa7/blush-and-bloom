@@ -3,7 +3,7 @@ const Path = {
   About: "/about",
   Products: "/products",
   Details: "/products/:id",
-  EditProduct: "/products:id/edit",
+  EditProduct: "/products/:id/edit",
   AddProduct: "/add-product",
   Login: "/login",
   Logout: "/logout",

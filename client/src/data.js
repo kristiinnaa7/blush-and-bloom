@@ -1,12 +1,12 @@
-import bali from "../../assets/bali.jpg";
-import malaysia from "../../assets/malaysia.jpg";
-import middleEast from "../../assets/middleeast.jpg";
-import middleeast from "../../assets/middle-east.jpg";
-import amber from "../../assets/harmain.jpg";
-import baarong from "../../assets/baarong.jpg";
-import baliimg from "../../assets/bali-img.jpg";
-import malay from "../../assets/malay.jpg";
-import auphorie from "../../assets/auphorie.jpg";
+import bali from "./assets/bali.jpg";
+import malaysia from "./assets/malaysia.jpg";
+import middleEast from "./assets/middleeast.jpg";
+import middleeast from "./assets/middle-east.jpg";
+import amber from "./assets/harmain.jpg";
+import baarong from "./assets/baarong.jpg";
+import baliimg from "./assets/bali-img.jpg";
+import malay from "./assets/malay.jpg";
+import auphorie from "./assets/auphorie.jpg";
 
 export const journeys = [
   {
