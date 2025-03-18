@@ -1,12 +1,27 @@
-# React + Vite
+# Blush & Bloom
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Blush & Bloom is a React-based e-commerce application for perfume lovers. It allows users to browse a catalog of perfumes, explore popular scents, and learn more about the company. Authenticated users can add, edit, and delete their own perfume products.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Non-Authenticated Users:**
 
-## Expanding the ESLint configuration
+  - View the catalog of perfumes.
+  - Explore destinations and popular scents.
+  - Read the About Us page.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Authenticated Users:**
+
+  - Add new perfumes to the store.
+  - Edit and delete their own products.
+
+- **Additional Features:**
+
+  - Best seller products.
+  - Sort best sellers by price and size.
+
+  ## Installation and Setup
+
+- Install dependencies - npm install
+- Start the server - node server.js
+- Start the client - npm run dev
