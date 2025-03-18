@@ -11,13 +11,7 @@
   max-width: 1000px;
   display: flex;
   justify-content: center;
-}
-
-.destination-content {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  padding-top: 20px;
 }
 
 .destination-img {
@@ -51,20 +45,14 @@
   font-size: 20px;
 }
 
-.perfume-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1000px;
-}
-
 .perfume-content {
   display: flex;
   align-items: center;
   font-size: 23px;
+  align-items: center;
   gap: 20px;
   width: 100%;
+  max-width: 1000px;
 }
 
 .text-content {
@@ -80,4 +68,17 @@
   width: 400px;
   height: auto;
   border-radius: 10px;
+}
+
+@media (max-width: 980px) {
+  .destination-img {
+    height: 100%;
+  }
+  .text-overlay {
+    width: 100%;
+  }
+
+  .perfume-content {
+    flex-direction: column;
+  }
 }

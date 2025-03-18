@@ -59,7 +59,7 @@ export const destinations = [
     slug: "malaysia",
     destinationName: "Malaysia - Enchanting Aroma and Vibrant Scents",
     description:
-      "Malaysia, a land where lush rainforests, exotic spices, and tropical blooms come together in a symphony of scent. Feel the warmth of golden sunshine as notes of rich sandalwood and fresh citrus intertwine with the delicate sweetness of jasmine and frangipani. Hints of aromatic spices, inspired by bustling night markets and ancient traditions, add depth and intrigue to this enchanting fragrance. Evoking the beauty of Malaysia’s diverse landscapes and vibrant culture, this scent is a journey through tropical paradise—bold, alluring, and unforgettable.",
+      "Malaysia, a land where lush rainforests, exotic spices, and tropical blooms come together in a symphony of scent.",
     img: malay,
     perfume: "Auphorie",
     perfumeDescription:

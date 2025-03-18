@@ -16,16 +16,14 @@ const SingleFragranceDestination = () => {
   return (
     <div className="single-destination">
       <div className="destination-wrapper">
-        <div className="destination-content">
-          <img
-            className="destination-img"
-            src={desiredDestination.img}
-            alt={desiredDestination.destinationName}
-          />
-          <div className="text-overlay">
-            <h1>{desiredDestination.destinationName}</h1>
-            <p>{desiredDestination.description}</p>
-          </div>
+        <img
+          className="destination-img"
+          src={desiredDestination.img}
+          alt={desiredDestination.destinationName}
+        />
+        <div className="text-overlay">
+          <h1>{desiredDestination.destinationName}</h1>
+          <p>{desiredDestination.description}</p>
         </div>
       </div>
 
