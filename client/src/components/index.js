@@ -14,7 +14,7 @@ import AuthGuard from "./Guards/AuthGuard";
 import LoginGuard from "./Guards/LoginGuard";
 import EditProduct from "./EditProduct/EditProduct";
 import Details from "./Details/Details";
-import NewFragrances from "./newFragrances/newFragrances";
+import NewFragrances from "./NewFragrances/NewFragrances";
 import SingleFragranceDestination from "./SingleFragranceDestination/SingleFragranceDestination";
 
 export {
